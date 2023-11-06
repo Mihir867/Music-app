@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #010101;
+    padding-bottom: 55px;
+
+}
+
+/*************************** all header-container CSS is divided into two sections **************************/
+.header-container {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+/******************************** left-section *****************************/
+.header-container .left-side {
+    width: 300px;
+    padding-top: 15px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-side img {
+    /* margin-top: 25px; */
+    width: 80px;
+    border-radius: 50%;
+
+}
+
+.left-side h3 {
+    font-family: 'Comfortaa', cursive;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 100px;
+    margin-left: 3px;
+    line-height: 15px;
+}
+
+.left-side h3 .logo-text {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #C51230;
+}
+
+.left-side p {
+    display: inline-block;
+    color: #015CC8;
+    cursor: pointer;
+}
+
+.left-side p:hover {
+    color: #C51230;
+}
+
+.main{
+  font-family: 'Poppins', sans-serif;
+  bottom: 10px;
+}
+
+
+
+/******************************* right-section ****************************/
+.header-container .right-side {
+    margin-left: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side img {
+    height: 30px;
+}
+
+.right-side .search-icon {
+    background-color: black;
+    padding: 5px 3px 5px 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.right-side .search-song {
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+    background-color: black;
+    color: black;
+    border: 1px;
+    outline: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.right-side .voice-search-icon {
+    background-color: black;
+    padding: 5px;
+    margin-left: -3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.notification {
+    position: relative;
+    background-color: rgb(182, 6, 6);
+    color: white;
+    font-size: 8px;
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    top: -10%;
+    left: -2%;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right-side i {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.right-side .profile-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/*main section*/
+.trending {
+  margin-top: 20px;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  margin-left: 60px;
+  background-color: black;
+}
+
+.trending img {
+  width: 250px;
+  height: 250px;
+  transition: .5s;
+  border-radius: 6px;
+}
+
+.trending img:hover {
+  width: 320px;
+  height: 320px;
+}
+
+.main-layout {
+  width: 950px;
+  padding-top: 50px;
+  color: black;
+  background-color: black;
+
+}
+
+.latest {
+  color: white;
+  display: grid;
+  margin-left: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.album {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  cursor: pointer;
+}
+
+.album img {
+  width: 150px;
+}
+
+.album img:hover {
+  box-shadow: 4px 4px 27px #242020;
+}
+
+.album-details p {
+  width: 150px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.album-stats a {
+  font-size: 12px;
+  color: #3f729b;
+}
+
+.album-stats {
+  font-size: 12px;
+  color: #3f729b;
+}
+
+.album i {
+  position: relative;
+  margin-left: 80px;
+  margin-top: -110px;
+}
+
+.album i:hover .dropdown {
+  display: inline-block;
+}
+.dropdown {
+  width: 93px;
+  position: absolute;
+  left: -80px;
+  /*top: 10px;*/
+  background-color: white;
+  display: none;
+  transition: opacity 0.3s;
+  color: black;
+  border-radius: 2px;
+}
+
+.dropdown p {
+  padding: 4px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.dropdown p:hover {
+  background-color: rgb(72, 80, 72);
+}
+
+.artists {
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.artists img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin: 5px 8px;
+}
+
+.artists a {
+  text-decoration: none;
+}
+
+.masterArtist {
+  border: none;
+  height: 120px;
+  width: 120px;
+  background-image: url('media/eminem.jpg');
+  background-size: contain;
+  border-radius: 100%;
+  margin: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masterArtist:hover {
+  box-shadow: 1px 1px 17px 2px #242020;
+}
+
+.icon {
+  font-size: 0px;
+}
+
+.masterArtist:hover .icon {
+  font-size: 23px;
+  color: white;
+}
+
+.display-container {
+  display: flex;
+  right: 315px;
+  justify-content: space-around;
+  position: relative;
+  background: black;
+}
+
+.display-container .seeAll {
+  position: absolute;
+  right: 2%;
+  font-size: 12px;
+  color: grey;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  background-color: rgb(17, 15, 15);
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.display:hover {
+  cursor: pointer;
+  background-color: rgb(36, 32, 32);
+  transition: .35s;
+}
+
+.display .display-image {
+  padding: 15px 15px 10px 15px;
+}
+
+.display-container .display img {
+  width: 180px;
+  border-radius: 5px;
+  transition: .35s;
+}
+
+.display-container .display img:hover {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.display p {
+  padding: 0px 15px;
+}
+
+.display .display-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.display .desc {
+  font-size: 12px;
+  line-height: 18px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: grey;
+}
+
+.h2-headings{
+  color: white;
+  background: black;
+  margin-bottom: -8px;
+}
+
+/***************************** some remaining css specific ******************************/
+.focus-baseline {
+  margin-top: -2px;
+  font-size: 12px;
+  color: #C51230;
+}
